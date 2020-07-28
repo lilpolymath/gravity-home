@@ -1,0 +1,156 @@
+.main,
+.service_two {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 8rem auto;
+}
+
+.section_tag {
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  letter-spacing: 6px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.main_content {
+  font-size: 3.75rem;
+  display: flex;
+  flex: 0.5;
+  font-weight: bold;
+  line-height: 4.5rem;
+}
+
+.xp_section {
+  display: flex;
+  flex-direction: row;
+  flex: 0.35;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.xp_section > div {
+  flex-direction: column;
+}
+
+.xp_section > div > p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  line-height: 2.875rem;
+  color: rgba(22, 22, 22, 0.7);
+}
+
+.video {
+  position: relative;
+  margin: 6rem 0;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.play_button {
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 17px solid #f96241;
+  margin-top: 20px;
+  margin-left: 27.5px;
+}
+
+.play {
+  position: absolute;
+  bottom: 3px;
+  width: 65px;
+  height: 65px;
+  background-color: white;
+  text-align: center;
+}
+
+.play {
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.service_image_section {
+  position: relative;
+  display: flex;
+  flex: 0.4;
+}
+
+/* .service_image {
+  display: flex;
+} */
+
+.service_image_main {
+  position: absolute;
+  top: 75px;
+  right: 6%;
+  width: 75%;
+  height: auto;
+  filter: drop-shadow(30px 80px 180px rgba(0, 0, 0, 0.25));
+  box-shadow: 2px -1px 50px rgb(0 0 0 / 0.4);
+}
+
+.service_content {
+  display: flex;
+  flex: 0.45;
+  flex-direction: column;
+  margin-top: 200px;
+}
+
+.main_text {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 1.8752rem;
+  color: rgba(22, 22, 22, 0.7);
+  line-height: 2.5rem;
+  margin: 2.5rem 0;
+}
+
+.kpi_list_item {
+  display: flex;
+  align-items: center;
+  margin: 2.5rem 0;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.kpi_list_item > svg {
+  margin-right: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .content,
+  .service_two {
+    flex-direction: row;
+  }
+
+  .xp_section {
+    margin-top: 0;
+  }
+
+  .service_image_main {
+    top: 75px;
+    right: -100px;
+  }
+
+  .service_content {
+    margin-top: 4rem;
+  }
+}

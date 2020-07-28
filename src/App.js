@@ -1,13 +1,15 @@
 import React from 'react';
 
 import Hero from '../src/components/Hero';
-import HeroSub from '../src/components/HeroSub';
+import About from './components/About';
+import Services from './components/Services';
 
 function App() {
   return (
     <>
       <Hero />
-      <HeroSub />
+      <About />
+      <Services />
     </>
   );
 }
