@@ -169,7 +169,7 @@ span:nth-of-type(2) {
 }
 
 .image {
-  width: 100%;
+  width: 110%;
   height: 100%;
   position: absolute;
   background-size: cover;
@@ -240,9 +240,9 @@ span:nth-of-type(2) {
 .play_button {
   width: 0;
   height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #f96241;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 17px solid #f96241;
   margin-top: 20px;
   margin-left: 27.5px;
 }
@@ -311,6 +311,7 @@ span:nth-of-type(2) {
     left: -125px;
     width: 70%;
     height: 300px;
+    filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.44));
     box-shadow: 2px -1px 50px rgb(0 0 0 / 0.4);
   }
 

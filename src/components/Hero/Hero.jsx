@@ -10,11 +10,11 @@ const Hero = () => {
   const images = [
     {
       index: 1,
-      src: 'v1594830785/Placeholder_6_ukdlcp.png',
+      src: 'v1595900229/Gravity/Placeholder_1_nnoz9w.png',
     },
     {
       index: 2,
-      src: 'v1588658554/Placeholder_hoy0ma.png',
+      src: 'v1594830785/Placeholder_6_ukdlcp.png',
     },
     {
       index: 3,
@@ -51,14 +51,14 @@ const Hero = () => {
     <main className={styles.main}>
       <div className={styles.hero}>
         <div className={styles.hero_text}>
-          <h2 className={styles.main_text}>Click and control your business</h2>
+          <h2 className={styles.main_text}>Work around you and your team</h2>
           <p className={styles.desc}>
             From ads that dance or sing to MTV-like commercials, online
-            advertisers are now using a new type of technology "rich media" to
+            advertisers are now using a new type of technology “rich media” to
             attract consumers.
           </p>
           <div className={styles.buttons}>
-            <Button label='Buy now' />
+            <Button label='Get Started' />
           </div>
         </div>
         <div className={styles.index}>
@@ -86,7 +86,7 @@ const Hero = () => {
             className={styles.image}
             style={{
               backgroundImage:
-                'url(https://res.cloudinary.com/favourcodes/image/upload/v1594830783/Placeholder_5_zytpbh.png)',
+                'url(https://res.cloudinary.com/favourcodes/image/upload/v1595900152/Gravity/Placeholder_elphoi.png)',
             }}
           />
         </figure>
