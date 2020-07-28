@@ -11,16 +11,15 @@ const Works = () => {
 
   const tagList = ['all', 'branding', 'web', 'development', 'films'];
 
-  console.log(filteredWorks);
-
   return (
     <section className={styles.main}>
       <div className={styles.section_tag}>- Our Works</div>
       <div className={styles.text}>
         <header className={styles.main_header}>Discover Our Work</header>
         <div className={styles.tag_list}>
-          {tagList.map(tag => (
+          {tagList.map((tag, index) => (
             <button
+              key={index}
               onClick={() => setTag(tag)}
               style={{ color: activeTag === tag ? 'rgb(20, 52, 225)' : null }}
               className={styles.tag_item}
