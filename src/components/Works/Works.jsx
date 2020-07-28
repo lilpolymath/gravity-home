@@ -1,15 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
+import Button from '../../common/Button';
 import styles from './style.module.css';
 import works from './works.json';
 
 const Works = () => {
   const [activeTag, setTag] = useState('all');
+  const [key, setKey] = useState(null);
+
+  const [showButton, setShowButton] = useState([
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+  ]);
 
   const filteredWorks = works.filter(
     work => work.tag.indexOf(activeTag) !== -1
   );
 
   const tagList = ['all', 'branding', 'web', 'development', 'films'];
+
+  // const hoverHelper = key => {
+  //   let defaultArray = [false, false, false, false, false, false];
+  //   defaultArray[key - 1]
+  //     ? setShowButton(defaultArray)
+  //     : (defaultArray[key - 1] = false);
+  //   setShowButton(defaultArray);
+  // };
+
+  useEffect(() => {
+    let defaultArray = [false, false, false, false, false, false];
+    defaultArray[key - 1]
+      ? setShowButton(defaultArray)
+      : (defaultArray[key - 1] = false);
+    setShowButton(defaultArray);
+  }, [key]);
 
   return (
     <section className={styles.main}>
@@ -31,15 +59,30 @@ const Works = () => {
       </div>
       <section className={styles.work_gallery}>
         {filteredWorks.map(work => (
-          <div key={work.key}>
+          <div style={{ position: 'relative' }} key={work.key}>
             <img
+              onMouseEnter={() => setKey(work.key)}
+              onMouseLeave={() => setKey(null)}
               src={work.url}
               alt='our work gallery'
               className={styles.work}
             />
+            {showButton[work.key - 1] && (
+              <div className={styles.play}>
+                <div className={styles.play_button}></div>
+              </div>
+            )}
           </div>
         ))}
       </section>
+      <div className={styles.section_tagline}>
+        <p className={styles.tagline}>
+          It picks up the words on the page and displays ads that are similar to
+          those words. Then when someone either performs an action or clicks on
+          your page you will get paid.
+        </p>
+        <Button label='Get Started' />
+      </div>
     </section>
   );
 };
