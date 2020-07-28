@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
 
 import Container from '../../common/Container';
-import NavBar from './NavBar';
-import HeroSection from './Hero';
+import HeroSubSection from './HeroSub';
 import styles from './style.module.css';
 
-export class Hero extends Component {
+export class HeroSub extends Component {
   render() {
     return (
       <Container styles={styles.body}>
-        <NavBar />
-        <HeroSection />
+        <HeroSubSection />
       </Container>
     );
   }
 }
 
-export default Hero;
+export default HeroSub;
