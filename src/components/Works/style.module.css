@@ -1,0 +1,77 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 6rem auto;
+}
+
+.section_tag {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  letter-spacing: 4px;
+  color: rgba(22, 22, 22, 0.7);
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.main_header {
+  font-size: 3.75rem;
+  display: flex;
+  font-weight: bold;
+  line-height: 4.5rem;
+}
+
+.tag_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tag_item {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 2.875rem;
+  color: rgba(22, 22, 22, 0.3);
+  font-weight: bold;
+  margin-right: 1.5rem;
+}
+
+.work_gallery {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  height: auto;
+  margin: 48px 0;
+}
+
+.work {
+  width: 100%;
+  height: auto;
+}
+
+.tag_list > button {
+  background: transparent;
+  border: none;
+}
+
+.tag_list > button:hover {
+  cursor: pointer;
+}
+
+.tag_list > button:active {
+  color: rgb(20, 52, 225);
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    flex-direction: row;
+    align-items: center;
+  }
+}

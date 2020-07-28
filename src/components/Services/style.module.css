@@ -7,10 +7,11 @@
 }
 
 .section_tag {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   margin-bottom: 4rem;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
+  color: rgba(22, 22, 22, 0.7);
 }
 
 .content {
@@ -88,10 +89,6 @@
   display: flex;
   flex: 0.4;
 }
-
-/* .service_image {
-  display: flex;
-} */
 
 .service_image_main {
   position: absolute;
