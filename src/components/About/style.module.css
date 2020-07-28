@@ -1,3 +1,7 @@
+.body {
+  min-height: 100%;
+}
+
 .main {
   display: flex;
   justify-content: space-between;
@@ -18,14 +22,14 @@
 }
 
 .main_text {
-  font-size: 4.125rem;
+  font-size: 4rem;
   font-weight: bold;
 }
 
 .desc {
-  font-size: 2rem;
+  font-size: 1.8752rem;
   color: rgba(22, 22, 22, 0.7);
-  line-height: 2.5rem;
+  line-height: 2.375rem;
   margin: 16px 0;
 }
 
@@ -60,9 +64,6 @@
 .image {
   width: 100%;
   height: auto;
-  background-size: cover;
-  background-position: center;
-  will-change: transform, opacity;
 }
 
 @media screen and (min-width: 768px) {

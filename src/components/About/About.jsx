@@ -3,11 +3,11 @@ import styles from './style.module.css';
 
 const HeroSub = () => {
   return (
-    <main className={styles.main}>
+    <section className={styles.main}>
       <div className={styles.main_picture}>
         <figure className={styles.figure}>
           <img
-          className={styles.image}
+            className={styles.image}
             src='https://res.cloudinary.com/favourcodes/image/upload/v1595900231/Gravity/Placeholder_2_kjr6ag.png'
             alt=''
           />
@@ -38,7 +38,7 @@ const HeroSub = () => {
           </div>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 

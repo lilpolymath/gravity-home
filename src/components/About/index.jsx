@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 
 import Container from '../../common/Container';
-import HeroSubSection from './HeroSub';
+import AboutSection from './About';
 import styles from './style.module.css';
 
-export class HeroSub extends Component {
+export class About extends Component {
   render() {
     return (
       <Container styles={styles.body}>
-        <HeroSubSection />
+        <AboutSection />
       </Container>
     );
   }
 }
 
-export default HeroSub;
+export default About;
