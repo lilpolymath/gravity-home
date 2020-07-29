@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { animated, useSpring, config } from 'react-spring';
 
-import Hamburger from '../../common/Hamburger'
+import Hamburger from '../../common/Hamburger';
 import useWindowDimensions from '../../hooks/use-window-dimension';
 import styles from './style.module.css';
 
@@ -11,7 +11,7 @@ const NavBar = () => {
 
   const toggleMenu = () => {
     if (width < 769) {
-      setOpen(!open);
+      setOpen(false);
     }
   };
 
@@ -44,7 +44,7 @@ const NavBar = () => {
           </svg>
         </div>
         <div className={styles.left_nav}>
-        <Hamburger toggleMenu={toggleMenu} open={open} />
+          <Hamburger toggleMenu={toggleMenu} open={open} />
         </div>
       </nav>
       <animated.div style={props} className={styles.menubar}>

@@ -23,10 +23,13 @@ const Testimonial = () => {
     config: config.gentle,
   });
 
+  const length = testimonial.length;
+
   const control = key => {
+    console.log(key, index, dir);
     setIndex(prevState => [
-      key % testimonial.length,
-      prevState[1] > key ? 1 : -1,
+      prevState[0] === 0 ? length - 1 : (prevState[0] + key) % length,
+      key,
     ]);
   };
 
@@ -42,10 +45,10 @@ const Testimonial = () => {
               <p className={styles.role}>{item.title}</p>
             </div>
             <div className={styles.buttons}>
-              <button onClick={() => control(item.key)} className={styles.prev}>
+              <button onClick={() => control(-1)} className={styles.prev}>
                 <Arrow />
               </button>
-              <button onClick={() => control(item.key)} className={styles.next}>
+              <button onClick={() => control(1)} className={styles.next}>
                 <Arrow />
               </button>
             </div>
