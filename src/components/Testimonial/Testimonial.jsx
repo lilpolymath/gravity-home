@@ -7,7 +7,7 @@ import testimonial from './testimonial.json';
 const Testimonial = () => {
   const [[index, dir], setIndex] = useState([0, 0]);
 
-  const testimonials = useTransition(testimonial[index], item => item.index, {
+  const testimonials = useTransition(testimonial[index], item => item.key, {
     from: {
       opacity: 0,
       transform: `translateX(${dir === 1 ? 100 : -100}px)`,
@@ -20,43 +20,45 @@ const Testimonial = () => {
       opacity: 0,
       transform: `translateX(${dir === 1 ? -100 : 100}px)`,
     },
-    config: config.molasses,
+    config: config.gentle,
   });
 
-  console.log(testimonial);
+  const control = key => {
+    setIndex(prevState => [
+      key % testimonial.length,
+      prevState[1] > key ? 1 : -1,
+    ]);
+  };
+
   return (
     <section className={styles.main}>
       <div className={styles.section_tag}>- Testimonial</div>
-      <div className={styles.content}>
-        <div className={styles.testimonial_content}>
-          <div className={styles.testimonial}>
-            "Professionals in their craft! All products were super great with
-            strong attention to details, and overall vibe"
+      {testimonials.map(({ item, props, key }) => (
+        <animated.div key={key} className={styles.content} style={{ ...props }}>
+          <div className={styles.testimonial_content}>
+            <div className={styles.testimonial}>"{item.quote}"</div>
+            <div className={styles.details}>
+              <p className={styles.name}>{item.name}</p>
+              <p className={styles.role}>{item.title}</p>
+            </div>
+            <div className={styles.buttons}>
+              <button onClick={() => control(item.key)} className={styles.prev}>
+                <Arrow />
+              </button>
+              <button onClick={() => control(item.key)} className={styles.next}>
+                <Arrow />
+              </button>
+            </div>
           </div>
-          <div className={styles.details}>
-            <p className={styles.name}>Polina Kuzina</p>
-            <p className={styles.role}>Manager at CraftWork</p>
+          <div className={styles.test}>
+            <img
+              alt=''
+              src={item.picture}
+              className={styles.testimonial_picture}
+            />
           </div>
-          <div className={styles.buttons}>
-            <button className={styles.prev}>
-              <Arrow />
-            </button>
-            <button className={styles.next}>
-              <Arrow />
-            </button>
-          </div>
-        </div>
-        <div className={styles.test}>
-          <animated.div
-            alt=''
-            style={{
-              backgroundImage:
-                'url(https://res.cloudinary.com/favourcodes/image/upload/v1595900383/Gravity/Placeholder_12_ulj5aw.png)',
-            }}
-            className={styles.testimonial_picture}
-          />
-        </div>
-      </div>
+        </animated.div>
+      ))}
     </section>
   );
 };

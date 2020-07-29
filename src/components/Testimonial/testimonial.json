@@ -8,23 +8,23 @@
   },
   {
     "key": 2,
-    "name": "",
-    "title": "",
-    "quote": "",
-    "picture": ""
+    "name": "Joe Paulo",
+    "title": "Creative Director at Lorem Ipsum",
+    "quote": "Working with Gravity has been one of the best decisions we have made so far.",
+    "picture": "https://res.cloudinary.com/favourcodes/image/upload/v1594510804/joao-paulo-de-souza-oliveira-BBNPJnucqYQ-unsplash_d5ns7s.jpg"
   },
   {
     "key": 3,
-    "name": "",
-    "title": "",
-    "quote": "",
-    "picture": ""
+    "name": "Yanibel Minaya",
+    "title": "CEO at Dolor",
+    "quote": "We had a lot to coming on us when we launch our latest product, hiring them was all we needed to do for a good result.",
+    "picture": "https://res.cloudinary.com/favourcodes/image/upload/v1594510806/honey-yanibel-minaya-cruz-YrYdmIVSE8Y-unsplash_vxwda9.jpg"
   },
   {
     "key": 4,
-    "name": "",
-    "title": "",
-    "quote": "",
-    "picture": ""
+    "name": "Juli Kosolapova",
+    "title": "Head of Product Development at Tesla",
+    "quote": "Top-tier professionals who are best at what they do. Their exection, from start to finish, holds you spellbound.",
+    "picture": "https://res.cloudinary.com/favourcodes/image/upload/v1594510808/juli-kosolapova-h6e1QApgI38-unsplash_ggey3g.jpg"
   }
 ]
