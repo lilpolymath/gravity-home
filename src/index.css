@@ -17,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   color: black;
   background: #f4f4f4;
 }
@@ -36,6 +36,6 @@ nav {
   z-index: 10;
 }
 
-a:focus {
-  outline: 2px solid orange;
+*:focus {
+  outline: 3px solid orange;
 }
