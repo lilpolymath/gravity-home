@@ -11,14 +11,17 @@ const Testimonial = () => {
   const testimonials = useTransition(testimonial[index], item => item.key, {
     from: {
       opacity: 0,
+      position: 'absolute',
       transform: `translateX(${dir === 1 ? 100 : -100}px)`,
     },
     enter: {
       opacity: 1,
+      position: 'relative',
       transform: 'translateX(0%)',
     },
     leave: {
       opacity: 0,
+      position: 'absolute',
       transform: `translateX(${dir === 1 ? -100 : 100}px)`,
     },
     config: config.gentle,
@@ -34,8 +37,11 @@ const Testimonial = () => {
   };
 
   return (
-    <section className={styles.main}>
-      <div className={styles.section_tag}>- Testimonial</div>
+    <section id='#testimonial' className={styles.main}>
+      <header>
+        <h3 className={styles.section_tag}>- Testimonial</h3>
+      </header>
+
       {testimonials.map(({ item, props, key }) => (
         <animated.div key={key} className={styles.content} style={{ ...props }}>
           <div className={styles.testimonial_content}>
@@ -70,3 +76,14 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
+
+// function Img ({src, fallback, className }) {
+//   const [loaded, setLoaded] = React.useState(false);
+
+//   return (
+//   <>
+//   <img src={src} className={`${style.img} ${className}`} hidden={loaded} />
+//   <img src={fallback} className={className} onload={ () => setLoaded(true)} hidden={!loaded} />
+//   </>
+//   )
+//   }

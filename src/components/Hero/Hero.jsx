@@ -52,7 +52,9 @@ const Hero = () => {
     <main className={styles.main}>
       <div className={styles.hero}>
         <div className={styles.hero_text}>
-          <h2 className={styles.main_text}>Work around you and your team</h2>
+          <header>
+            <h2 className={styles.main_text}>Work around you and your team</h2>
+          </header>
           <p className={styles.desc}>
             From ads that dance or sing to MTV-like commercials, online
             advertisers are now using a new type of technology “rich media” to

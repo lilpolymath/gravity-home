@@ -39,3 +39,7 @@ nav {
 *:focus {
   outline: 3px solid orange;
 }
+
+.img {
+  background-color: red;
+}

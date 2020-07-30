@@ -10,7 +10,6 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column-reverse;
-  position: absolute;
   margin-top: 5rem;
 }
 

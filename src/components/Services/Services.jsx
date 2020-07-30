@@ -8,7 +8,9 @@ import { ReactComponent as Bag } from '../../assets/Bag.svg';
 const Services = () => {
   return (
     <section id='#services' className={styles.main}>
-      <div className={styles.section_tag}>- Services</div>
+      <header>
+        <h3 className={styles.section_tag}>- Services</h3>
+      </header>
       <section className={styles.content}>
         <header className={styles.main_content}>
           We love work hard and explore new things that’s why we cover lot of

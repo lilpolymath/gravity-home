@@ -19,9 +19,13 @@ const Works = () => {
 
   return (
     <section className={styles.main}>
-      <div className={styles.section_tag}>- Our Works</div>
+      <header>
+        <h3 className={styles.section_tag}>- Our Works</h3>
+      </header>
       <div className={styles.text}>
-        <header className={styles.main_header}>Discover Our Work</header>
+        <header>
+          <h2 className={styles.main_header}>Discover Our Work</h2>
+        </header>
         <div className={styles.tag_list}>
           {tagList.map((tag, index) => (
             <button
@@ -37,7 +41,7 @@ const Works = () => {
       </div>
       <section className={styles.work_gallery}>
         {filteredWorks.map(work => (
-          <div style={{ position: 'relative' }} key={work.key}>
+          <div key={work.key}>
             <Image
               alt='our work gallery'
               cloudName='favourcodes'

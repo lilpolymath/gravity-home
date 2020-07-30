@@ -19,8 +19,10 @@ const HeroSub = () => {
         </figure>
       </div>
       <div className={styles.main_content}>
-        <header className={styles.main_text}>
-          We solve digital problems with an outstanding creative flare
+        <header>
+          <h2 className={styles.main_text}>
+            We solve digital problems with an outstanding creative flare
+          </h2>
         </header>
         <p className={styles.desc}>
           The best time to view the moon, obviously, is at night when there are
