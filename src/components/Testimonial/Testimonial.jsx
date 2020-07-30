@@ -30,10 +30,9 @@ const Testimonial = () => {
   const length = testimonial.length;
 
   const control = key => {
-    setIndex(prevState => [
-      prevState[0] <= 0 ? length - 1 : (prevState[0] + key) % length,
-      key,
-    ]);
+    const prev = index === 0 ? length - 1 : (index - 1) % length;
+    const next = key === 1 ? (index + 1) % length : 0;
+    setIndex(prevState => [key === 1 ? next : prev, key]);
   };
 
   return (
