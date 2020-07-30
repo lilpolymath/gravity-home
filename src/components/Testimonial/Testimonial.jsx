@@ -27,7 +27,6 @@ const Testimonial = () => {
   const length = testimonial.length;
 
   const control = key => {
-    console.log(key, index, dir);
     setIndex(prevState => [
       prevState[0] <= 0 ? length - 1 : (prevState[0] + key) % length,
       key,
