@@ -1,4 +1,6 @@
 import React from 'react';
+import { Image } from 'cloudinary-react';
+
 import styles from './style.module.css';
 import { ReactComponent as Hundred } from '../../assets/100.svg';
 import { ReactComponent as Bag } from '../../assets/Bag.svg';
@@ -41,18 +43,24 @@ const Services = () => {
       <section className={styles.service_two}>
         <div className={styles.service_image_section}>
           <figure className={styles.service_image}>
-            <img
+            <Image
+              cloudName='favourcodes'
+              publicId='Gravity/Placeholder_13_ewcyiy.png'
+              secure='true'
+              loading='lazy'
               className={styles.image}
-              src='https://res.cloudinary.com/favourcodes/image/upload/v1595939062/Gravity/Placeholder_13_ewcyiy.png'
               alt=''
-            />
+            ></Image>
           </figure>
           <figure className={styles.service_image_main}>
-            <img
+            <Image
+              cloudName='favourcodes'
+              publicId='Gravity/Placeholder_5_e7wi25.png'
+              secure='true'
+              loading='lazy'
               className={styles.image}
-              src='https://res.cloudinary.com/favourcodes/image/upload/v1595900235/Gravity/Placeholder_5_e7wi25.png'
               alt=''
-            />
+            ></Image>
           </figure>
         </div>
         <div className={styles.service_content}>

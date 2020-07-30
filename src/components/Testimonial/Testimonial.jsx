@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { animated, useTransition, config } from 'react-spring';
+import { Image } from 'cloudinary-react';
 import { ReactComponent as Arrow } from '../../assets/Vector.svg';
 import styles from './style.module.css';
 import testimonial from './testimonial.json';
@@ -28,7 +29,7 @@ const Testimonial = () => {
   const control = key => {
     console.log(key, index, dir);
     setIndex(prevState => [
-      prevState[0] === 0 ? length - 1 : (prevState[0] + key) % length,
+      prevState[0] <= 0 ? length - 1 : (prevState[0] + key) % length,
       key,
     ]);
   };
@@ -54,11 +55,14 @@ const Testimonial = () => {
             </div>
           </div>
           <div className={styles.test}>
-            <img
-              alt=''
-              src={item.picture}
+            <Image
+              alt={item.name}
+              cloudName='favourcodes'
+              publicId={item.picture}
+              secure='true'
+              loading='lazy'
               className={styles.testimonial_picture}
-            />
+            ></Image>
           </div>
         </animated.div>
       ))}

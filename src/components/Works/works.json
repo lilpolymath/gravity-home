@@ -1,32 +1,32 @@
 [
   {
     "key": 1,
-    "url": "https://res.cloudinary.com/favourcodes/image/upload/v1595900372/Gravity/Placeholder_6_tyvmka.png",
+    "url": "Gravity/Placeholder_6_tyvmka.png",
     "tag": ["all", "branding"]
   },
   {
     "key": 2,
-    "url": "https://res.cloudinary.com/favourcodes/image/upload/v1595900373/Gravity/Placeholder_7_my0krc.png",
+    "url": "Gravity/Placeholder_7_my0krc.png",
     "tag": ["all", "branding", "web"]
   },
   {
     "key": 3,
-    "url": "https://res.cloudinary.com/favourcodes/image/upload/v1595900375/Gravity/Placeholder_8_ivgyot.png",
+    "url": "Gravity/Placeholder_8_ivgyot.png",
     "tag": ["all", "web", "development"]
   },
   {
     "key": 4,
-    "url": "https://res.cloudinary.com/favourcodes/image/upload/v1595900380/Gravity/Placeholder_10_swj7j6.png",
+    "url": "Gravity/Placeholder_10_swj7j6.png",
     "tag": ["all", "development"]
   },
   {
     "key": 5,
-    "url": "https://res.cloudinary.com/favourcodes/image/upload/v1595900381/Gravity/Placeholder_11_eknono.png",
+    "url": "Gravity/Placeholder_11_eknono.png",
     "tag": ["all", "films"]
   },
   {
     "key": 6,
-    "url": "https://res.cloudinary.com/favourcodes/image/upload/v1595900384/Gravity/Placeholder_9_g4c7mj.png",
+    "url": "Gravity/Placeholder_9_g4c7mj.png",
     "tag": ["all", "films"]
   }
 ]

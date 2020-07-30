@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Image } from 'cloudinary-react';
 
 import Button from '../../common/Button';
 import styles from './style.module.css';
@@ -60,13 +61,14 @@ const Works = () => {
       <section className={styles.work_gallery}>
         {filteredWorks.map(work => (
           <div style={{ position: 'relative' }} key={work.key}>
-            <img
-              onMouseEnter={() => setKey(work.key)}
-              onMouseLeave={() => setKey(null)}
-              src={work.url}
+            <Image
               alt='our work gallery'
+              cloudName='favourcodes'
+              publicId={work.url}
+              secure='true'
+              loading='lazy'
               className={styles.work}
-            />
+            ></Image>
             {showButton[work.key - 1] && (
               <div className={styles.play}>
                 <div className={styles.play_button}></div>

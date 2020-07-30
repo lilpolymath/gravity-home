@@ -1,4 +1,6 @@
 import React from 'react';
+import { Image } from 'cloudinary-react';
+
 import styles from './style.module.css';
 
 const HeroSub = () => {
@@ -6,11 +8,14 @@ const HeroSub = () => {
     <section className={styles.main}>
       <div className={styles.main_picture}>
         <figure className={styles.figure}>
-          <img
+          <Image
+            cloudName='favourcodes'
+            publicId='Gravity/Placeholder_2_kjr6ag.png'
+            secure='true'
+            loading='lazy'
             className={styles.image}
-            src='https://res.cloudinary.com/favourcodes/image/upload/v1595900231/Gravity/Placeholder_2_kjr6ag.png'
             alt=''
-          />
+          ></Image>
         </figure>
       </div>
       <div className={styles.main_content}>

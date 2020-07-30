@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { animated, useTransition, config } from 'react-spring';
+import { Image } from 'cloudinary-react';
 
 import Button from '../../common/Button';
 import styles from './style.module.css';
@@ -82,13 +83,14 @@ const Hero = () => {
 
       <div className={styles.hero_image}>
         <figure className={styles.figure}>
-          <div
+          <Image
+            cloudName='favourcodes'
+            publicId='Gravity/Placeholder_elphoi.png'
+            secure='true'
+            loading='lazy'
             className={styles.image}
-            style={{
-              backgroundImage:
-                'url(https://res.cloudinary.com/favourcodes/image/upload/v1595900152/Gravity/Placeholder_elphoi.png)',
-            }}
-          />
+            alt=''
+          ></Image>
         </figure>
 
         <div className={styles.next}>
