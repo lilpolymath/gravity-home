@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { animated, useTransition, config } from 'react-spring';
-import { Image } from 'cloudinary-react';
+import { Image, Placeholder } from 'cloudinary-react';
 import { ReactComponent as Arrow } from '../../assets/Vector.svg';
 import styles from './style.module.css';
 import testimonial from './testimonial.json';
@@ -66,7 +66,14 @@ const Testimonial = () => {
               secure='true'
               loading='lazy'
               className={styles.testimonial_picture}
-            ></Image>
+              dpr='auto'
+              responsive
+              width='auto'
+              crop='scale'
+              responsiveUseBreakpoints='true'
+            >
+              <Placeholder type='vectorize'></Placeholder>
+            </Image>
           </div>
         </animated.div>
       ))}

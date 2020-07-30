@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { animated, useTransition, config } from 'react-spring';
-import { Image } from 'cloudinary-react';
+import { Image, Placeholder } from 'cloudinary-react';
 
 import Button from '../../common/Button';
 import styles from './style.module.css';
@@ -92,7 +92,14 @@ const Hero = () => {
             loading='lazy'
             className={styles.image}
             alt=''
-          ></Image>
+            dpr='auto'
+            responsive
+            width='auto'
+            crop='scale'
+            responsiveUseBreakpoints='true'
+          >
+            <Placeholder type='vectorize'></Placeholder>
+          </Image>
         </figure>
 
         <div className={styles.next}>
