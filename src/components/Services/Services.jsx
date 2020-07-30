@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from 'cloudinary-react';
+import { Image, Placeholder } from 'cloudinary-react';
 
 import styles from './style.module.css';
 import { ReactComponent as Hundred } from '../../assets/100.svg';
@@ -52,7 +52,14 @@ const Services = () => {
               loading='lazy'
               className={styles.image}
               alt=''
-            ></Image>
+              dpr='auto'
+              responsive
+              width='auto'
+              crop='scale'
+              responsiveUseBreakpoints='true'
+            >
+              <Placeholder type='vectorize'></Placeholder>
+            </Image>
           </figure>
           <figure className={styles.service_image_main}>
             <Image
@@ -62,7 +69,14 @@ const Services = () => {
               loading='lazy'
               className={styles.image}
               alt=''
-            ></Image>
+              dpr='auto'
+              responsive
+              width='auto'
+              crop='scale'
+              responsiveUseBreakpoints='true'
+            >
+              <Placeholder type='vectorize'></Placeholder>
+            </Image>
           </figure>
         </div>
         <div className={styles.service_content}>
