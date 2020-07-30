@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Image } from 'cloudinary-react';
+import { Image, Placeholder } from 'cloudinary-react';
 
 import Button from '../../common/Button';
 import styles from './style.module.css';
@@ -49,7 +49,14 @@ const Works = () => {
               secure='true'
               loading='lazy'
               className={styles.work}
-            ></Image>
+              dpr='auto'
+              responsive
+              width='auto'
+              crop='scale'
+              responsiveUseBreakpoints='true'
+            >
+              <Placeholder type='vectorize'></Placeholder>
+            </Image>
             {false && (
               <div className={styles.play}>
                 <div className={styles.play_button}></div>
