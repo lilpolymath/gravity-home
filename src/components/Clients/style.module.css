@@ -37,6 +37,13 @@
   flex-direction: column;
 }
 
+.clients_content > p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  line-height: 2.875rem;
+  color: rgba(22, 22, 22, 0.7);
+}
+
 .clients_logos {
   display: flex;
   justify-content: space-between;
