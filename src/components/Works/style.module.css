@@ -101,7 +101,7 @@
 
 .section_tagline {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -121,6 +121,6 @@
   }
 
   .tagline {
-    width: 80%;
+    width: 75%;
   }
 }

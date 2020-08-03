@@ -73,7 +73,7 @@ const Works = () => {
           those words. Then when someone either performs an action or clicks on
           your page you will get paid.
         </p>
-        <Button label='Get Started' />
+        <Button label='See our works' />
       </div>
     </section>
   );
