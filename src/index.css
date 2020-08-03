@@ -9,6 +9,16 @@
   font: 62.5% 'Fira Sans', sans-serif;
 }
 
+:root {
+  --default-bg-color: #f6f7f8;
+  --default-bg-moving-gradient: linear-gradient(
+    to right,
+    rgb(238, 238, 238) 8%,
+    rgb(222, 222, 222) 18%,
+    rgb(238, 238, 238) 33%
+  );
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -41,5 +51,12 @@ nav {
 }
 
 .img {
-  background-color: red;
+  background: red;
+}
+
+p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  line-height: 2.875rem;
+  color: rgba(22, 22, 22, 0.7);
 }

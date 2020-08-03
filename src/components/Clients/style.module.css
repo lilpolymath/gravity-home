@@ -1,3 +1,64 @@
 .body {
   background-color: #fafafa;
+  min-height: 100%;
+}
+
+.main {
+  padding: 5rem 0;
+}
+
+.clients {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 0;
+  flex-direction: column;
+}
+
+.section_tag {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: rgb(22, 22, 22);
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+.clients_header {
+  font-size: 3.75rem;
+  display: flex;
+  flex: 0.5;
+  font-weight: bold;
+  line-height: 4.5rem;
+}
+
+.clients_content {
+  display: flex;
+  flex: 0.5;
+  flex-direction: column;
+}
+
+.clients_logos {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.clients_logos > svg {
+  margin: 2rem;
+}
+
+.clients_logos svg:hover > g {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 769px) {
+  .clients {
+    flex-direction: row;
+  }
+
+  .section_tag {
+    margin: 0 0 1.5rem 0;
+  }
 }

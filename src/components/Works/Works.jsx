@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Image, Placeholder } from 'cloudinary-react';
+// import { Image, Placeholder } from 'cloudinary-react';
 
 import Button from '../../common/Button';
 import styles from './style.module.css';
 import works from './works.json';
+import Image from '../../common/Image';
 
 // TODO
 // Set onHover trigger display
@@ -43,20 +44,21 @@ const Works = () => {
         {filteredWorks.map(work => (
           <div key={work.key}>
             <Image
+              style={styles.work}
+              url={`https://res.cloudinary.com/favourcodes/image/upload/v1/${work.url}`}
+              alt=''
+            />
+
+            {/* <Image
               alt='our work gallery'
               cloudName='favourcodes'
               publicId={work.url}
               secure='true'
               loading='lazy'
               className={styles.work}
-              dpr='auto'
-              responsive
-              width='auto'
-              crop='scale'
-              responsiveUseBreakpoints='true'
             >
               <Placeholder type='vectorize'></Placeholder>
-            </Image>
+            </Image> */}
             {false && (
               <div className={styles.play}>
                 <div className={styles.play_button}></div>
